@@ -1,0 +1,52 @@
+<Payload xmlns="http://javaops.ru"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://javaops.ru payload.xsd">
+    <Users>
+        <User flag="active" city="kiv" email="gmail@gmail.com">
+            <fullName>Full Name</fullName>
+            <projects>
+                <project name="topjava">
+                    <groups>
+                        <group name="topjava01" type="cur"/>
+                    </groups>
+                </project>
+            </projects>
+        </User>
+        <User flag="superuser" city="spb" email="admin@javaops.ru">
+            <fullName>Admin</fullName>
+            <projects>
+                <project name="masterjava">
+                    <groups>
+                        <group name="masterjava01" type="fin"/>
+                    </groups>
+                </project>
+                <project name="topjava">
+                    <groups>
+                        <group name="topjava07" type="fin"/>
+                        <group name="topjava08" type="fin"/>
+                    </groups>
+                </project>
+            </projects>
+        </User>
+        <User flag="deleted" city="spb" email="mail@yandex.ru">
+            <fullName>Deleted</fullName>
+            <projects>
+                <project name="topjava">
+                    <groups>
+                        <group name="topjava05" type="reg"/>
+                    </groups>
+                </project>
+            </projects>
+        </User>
+    </Users>
+    <Cities>
+        <City id="spb">Санкт-Петербург</City>
+        <City id="kiv">Киев</City>
+        <City id="mnsk">Минск</City>
+    </Cities>
+    <Types>
+        <Type id="reg">REGISTERING</Type>
+        <Type id="cur">CURRENT</Type>
+        <Type id="fin">FINISHED</Type>
+    </Types>
+</Payload>
